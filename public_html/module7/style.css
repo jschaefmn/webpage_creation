@@ -1,0 +1,39 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.1em;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+fieldset {
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+legend {
+  text-shadow: 1px 1px 1px #000;
+  font-weight: bold;
+}
+
+form p:nth-child(11) #lname{
+  margin-left: 10px;
+}
+
+form p:nth-child(12) #email {
+  margin-left: 52px;
+}
+
+#purchMeth {
+  display: flex;
+  align-items: center;;
+}
+
+select {
+  margin-left: 10px;
+}

@@ -1,0 +1,67 @@
+/*
+     Jake Schaefbauer
+     assignment2.css
+     INFO1311
+     Olberding
+     4/3/2024
+*/
+body {
+  background-color: #003366;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  min-width: 800px;
+}
+
+header {
+  height: 120px;
+  background: url(./primelogo.gif);
+  background-repeat: no-repeat;
+  background-color: #bacbe0;
+  padding-top: 1px;
+}
+
+h1 {
+  color: #003366;
+  font-size: 3em;
+  text-shadow: 1px 2px 4px #003366;
+  margin-left: 100px;
+}
+
+nav > ul > li > a:link {
+  color: white;
+}
+
+nav > ul > li > a:visited {
+  color: #bacbe0;
+}
+
+nav > ul {
+  list-style-type: none;
+}
+
+nav > ul > li {
+  display: inline;
+  margin-left: 20px;
+}
+
+main {
+  background-color: white;
+  padding: 20px 50px;
+}
+
+footer {
+  font-size: .7em;
+  text-align: center;
+  border-top: 1px solid #003366;
+  background-color: #bacbe0;
+  padding: 20px 0px;
+}
+
+.company {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.copyright {
+  font-style: italic;
+}

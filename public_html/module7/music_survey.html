@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Survey</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Music Survey</h1>
+    <p>This is a brief survey gathering information about your favorite type of music and how often you purchase CDs.
+      Once survey is submited you will receive an email containing a list of your answers.</p>
+  </header>
+
+  <form action="https://www.mccinfo.net/webresources/cgi-bin/formmail.asp" method="post">
+    <input type="hidden" name="recipient" value="lolberding@mccneb.edu">
+    <input type="hidden" name="subject" value="INFO1311 Form Assignment">
+    <input type="hidden" name="return_link_url" value="http://student.mccinfo.net/~jschaefbauer/module7/music_survey.html">
+    <input type="hidden" name="bgcolor" value="#fff">
+    <input type="hidden" name="return_link_title" value="Return to Form">
+    <input type="hidden" name="title" value="Thank You for filling out the form!">
+    <input type="hidden" name="font_face" value="'Courier New', Courier">
+    <input type="hidden" name="font_size" value="4"> 
+    <input type="hidden" name="text_color" value="#000"> 
+
+    <p>*First Name:
+      <input type="text" id="fname" name="fname" size="15" required>
+    </p>
+    <p>*Last Name:
+      <input type="text" id="lname" name="lname" size="30" required>
+    </p>
+    <p>*Email: <input type="email" id="email" name="email" size="20" required></p>
+
+    <fieldset>
+      <legend>Select your Favorite Types of Music</legend>
+      <label><input type="checkbox" name="rock" id="rock"> Rock</label>
+      <label><input type="checkbox" name="pop" id="pop"> Pop</label>
+      <label><input type="checkbox" name="country" id="country"> Country</label>
+      <label><input type="checkbox" name="rap" id="rap"> Rap</label>
+      <label><input type="checkbox" name="classical" id="classical"> Classical</label>
+      <label><input type="checkbox" name="jazz" id="jazz"> Jazz</label>
+      <label><input type="checkbox" name="other" id="other"> Other</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>How often do you purchase CDs?</legend>
+      <label><input type="radio" name="purchase" id="daily" value="weekly"> Weekly</label>
+      <label><input type="radio" name="purchase" id="weekly" value="few"> A few CDs each year</label>
+      <label><input type="radio" name="purchase" id="monthly" value="monthly"> Monthly</label>
+      <label><input type="radio" name="purchase" id="yearly" value="never"> Never Purchase</label>
+    </fieldset>
+
+
+    <div id="purchMeth">
+      <p>Select the method you use most often to purchase Music:</p>
+      <select name="purchaseMethod" id="purchaseMethod">
+        <option value="">Select an option</option>
+        <option value="online">Online</option>
+        <option value="store">Retail Store</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <br>
+    <p>What role does music play in your life?</p>
+    <textarea name="musicRole" id="musicRole" cols="60" rows="10"></textarea>
+
+    <p><input type="submit" value="Submit">
+      <input type="reset" value="Clear Form">
+    </p>
+  </form>
+</body>
+
+</html>
