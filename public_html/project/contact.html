@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Contact Us</title>
+</head>
+<body>
+    <div id="wrapper">
+      <header>
+  
+      </header>
+  
+      <nav id="navBar">
+        <ul>
+          <li><a href="./home.html">Home</a></li>
+          <li><a href="./specials.html">Specials</a></li>
+          <li><a href="./history.html">History</a></li>
+          <li class="active"><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+  
+      <main>
+        <form action="https://www.mccinfo.net/webresources/cgi-bin/formmail.asp" method="post">
+          <input type="hidden" name="recipient" value="lolberding@mccneb.edu">
+          <input type="hidden" name="subject" value="INFO1311 Final Project Jacob Schaefbauer">
+          <input name="redirect" type="hidden" value="http://student.mccinfo.net/jschaefbauer/project/formSubmission.html">
+
+          <fieldset>
+            <legend>Questions or Comments? Fill out the form and we will get back to you!</legend>
+            <p>First Name:
+              <input type="text" id="fname" size="15" required>
+            </p>
+
+            <p>Last Name:
+              <input type="text" id="lname" size="15" required>
+            </p>
+
+            <p>Email:
+              <input type="email" id="email" size="15" required>
+            </p>
+
+            <p>Phone Number:
+              <input type="tel" id="phone" size="15" pattern="\d{3}-\d{3}-\d{4}" placeholder="123-456-7890" required>
+            </p>
+
+            <p>Comments:
+              <textarea id="comments" rows="4" cols="50" required></textarea>
+            </p>
+
+            <p>Contact Preference:</p>
+            <label><input type="radio" id="telephone" name="contact" value="phone">Phone</label>
+            <label><input type="radio" id="e-mail" name="contact" value="email">E-Mail</label>
+
+            <p>
+              <input type="submit" value="Submit">
+            </p>
+          </fieldset>
+
+        </form>
+      </main>
+  
+      <footer>
+        <p>&copy; Jake Schaefbauer <a href="mailto:jschaefbauer@mail.mccneb.edu">jschaefbauer@mail.mccneb.edu</a></p>
+  
+        <div id="footWrapper">
+          <a href="./home.html">Home</a>
+          <a href="./specials.html">Specials</a>
+          <a href="./history.html">History</a>
+          <a href="./contact.html">Contact Us</a>
+        </div>
+        </footer>
+    </div>
+  </body>
+</html>
